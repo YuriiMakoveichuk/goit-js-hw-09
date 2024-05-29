@@ -1,9 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
 @import url('./reset.css');
 
 :root {
@@ -20,4 +15,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+.gallery {
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px)/3);
 }

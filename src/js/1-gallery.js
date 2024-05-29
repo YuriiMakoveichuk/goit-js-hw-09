@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -64,3 +67,27 @@ const images = [
   },
 ];
 const ulElem = document.querySelector('.gallery');
+
+function imageTemplate({ preview, original, description }) {
+  return ` <li class="gallery-item">
+        <a class="gallery-link" href="${original}">
+          <img
+            class="gallery-image"
+            src="${preview}"
+            alt="${description}"
+          />
+        </a>
+      </li>`;
+}
+
+function imagesTemplate(arr) {
+  return arr.map(imageTemplate).join('\n');
+}
+
+const markup = imagesTemplate(images);
+ulElem.innerHTML = markup;
+
+const signature = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
