@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/email.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <p><a href="./index.html">Go back</a></p>
+    <p class="home-list"><a href="./index.html">Go back</a></p>
+
+    <form class="feedback-form" autocomplete="off">
+      <label class="form-label">
+        Email
+        <input
+          class="form-input form-item"
+          type="email"
+          name="email"
+          autofocus
+        />
+      </label>
+      <label class="form-label">
+        Message
+        <textarea class="form-item" name="message" rows="8"></textarea>
+      </label>
+      <button class="feedback-form-btn" type="submit">Submit</button>
+    </form>
+
     <script type="module" src="js/2-form.js"></script>
   </body>
 </html>

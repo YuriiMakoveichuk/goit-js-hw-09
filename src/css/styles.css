@@ -16,6 +16,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.home-list {
+  font-size: 20px;
+  font-weight: 900;
+  color: #4e75ff;
+}
 .gallery {
   width: 1128px;
   display: flex;
@@ -28,4 +34,56 @@
 
 .gallery-item {
   width: calc((100% - 48px)/3);
+}
+
+.feedback-form {
+  width: 300px;
+  margin: 10px auto;
+  border: 2px solid #4e75ff;
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4e75ff;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.form-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid #4e75ff;
+  border-radius: 5px;
+  resize: none;
+}
+
+.feedback-form-btn {
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 2px solid #4e75ff;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.feedback-form-btn:hover,
+.feedback-form-btn:focus {
+  background-color: #fff;
+  color: #4e75ff;
+  border: 2px solid #4e75ff;
 }
